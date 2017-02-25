@@ -79,7 +79,7 @@ public CPSupport_Remove(client, id)
 {
 }
 
-public Action:OnChatMessage(int& client, ArrayList recipients, eChatFlags& flag, char[] name, char[] message, bool& bProcessColors, bool& bRemoveColors)
+public Action:CP_OnChatMessage(int& client, ArrayList recipients, eChatFlags& flag, char[] name, char[] message, bool& bProcessColors, bool& bRemoveColors)
 {
 	new m_iEquippedNameTag = Store_GetEquippedItem(client, "nametag");
 	new m_iEquippedNameColor = Store_GetEquippedItem(client, "namecolor");
